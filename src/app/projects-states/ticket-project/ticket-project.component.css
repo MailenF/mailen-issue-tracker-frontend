@@ -1,0 +1,48 @@
+.card-container {
+  background: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-left: 2px solid rgba(55, 0, 179, 0.55);
+  border-top: 1px solid rgba(0, 0, 0, 0.69);
+  border-right: 1px solid rgba(0, 0, 0, 0.69);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.69);
+  border-radius: 6px;
+  font-family: "Signika Negative", sans-serif;
+}
+.header {
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.type-error {
+  margin-left: 8px;
+  font-size: 15px;
+  margin-top: 8px;
+  font-weight: bold;
+  background: orange;
+  display: inline-block;
+}
+.state {
+  margin-top: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  float: right;
+}
+.footer {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 22px;
+}
+.date {
+  margin-left: 8px;
+  display: inline-block;
+}
+.reported {
+  margin-right: 8px;
+  display: inline-block;
+  float: right;
+}

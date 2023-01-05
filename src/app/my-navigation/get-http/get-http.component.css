@@ -1,0 +1,22 @@
+.row {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.col {
+  margin-right: 16px;
+  max-width: 360px;
+}
+.todo,
+.done,
+.progreso,
+.review {
+  /*border: 2px solid rgba(16, 14, 14, 0.47);*/
+  border-radius: 6px;
+  background: rgba(224, 224, 224, 0.42);
+  margin-left: 6px;
+}
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: #868484;
+}

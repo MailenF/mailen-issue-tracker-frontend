@@ -1,0 +1,45 @@
+.container {
+  width: 800px;
+  height: 720px;
+  display: grid;
+  grid-template-columns: 200px 600px;
+  grid-template-rows: 200px 450px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+.icon-create {
+  float: right;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.name {
+  font-size: 34px;
+  margin-top: 14px;
+}
+.puesto {
+  font-size: 16px;
+}
+mat-icon {
+  font-size: 20px;
+  margin-top: 6px;
+}
+.container mat-tab-group {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 30px;
+}
+.buttons {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+button {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+app-delete-user {
+  display: inline-block;
+}

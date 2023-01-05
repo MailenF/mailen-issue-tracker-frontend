@@ -1,0 +1,42 @@
+<body>
+  <h1>Get a Ticket by ID</h1>
+  <div>
+    <form class="form" [formGroup]="form" (ngSubmit)="getTicketById()">
+      <mat-form-field appearance="fill">
+        <mat-label>Numero ID</mat-label>
+        <input matInput formControlName="id" />
+      </mat-form-field>
+      <tr>
+        <button
+          class="button"
+          mat-raised-button
+          type="submit"
+          [disabled]="form.invalid"
+        >
+          Get Ticket
+        </button>
+      </tr>
+    </form>
+  </div>
+  <div
+    *ngFor="let ticket of ticketId"
+    class="card-container"
+    style="max-width: 19rem"
+    (click)="openDialog(ticket)"
+  >
+    <div class="encabezado-container">
+      <div class="type-error">{{ ticket.typeError }}</div>
+      <div class="state">STATE: {{ ticket.state }}</div>
+    </div>
+    <div class="card-body text-dark">
+      {{ ticket.descriptionError }}
+    </div>
+
+    <div class="footer-container">
+      <div class="date">
+        {{ ticket.date }}
+      </div>
+      <div class="reported">{{ ticket.reportedBy }}</div>
+    </div>
+  </div>
+</body>

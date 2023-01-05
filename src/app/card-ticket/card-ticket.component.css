@@ -1,0 +1,63 @@
+.button {
+  margin-left: 10px;
+}
+.card-container {
+  background: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-family: "Signika Negative", sans-serif;
+  overflow: hidden;
+}
+.type-error {
+  margin-left: 8px;
+  font-size: 15px;
+  margin-top: 8px;
+  font-weight: bold;
+  background: orange;
+  display: inline-block;
+  /*margin-right: 160px;*/
+}
+.project {
+  margin-top: 8px;
+  margin-right: 8px;
+  display: inline-block;
+  float: right;
+}
+.date {
+  margin-left: 8px;
+  display: inline-block;
+}
+.reported {
+  margin-right: 8px;
+  margin-bottom: 6px;
+  display: inline-block;
+  float: right;
+}
+.card-body {
+  margin-left: -10px;
+}
+.color-to-do {
+  border-left: 2px solid rgba(176, 0, 32, 0.55);
+}
+.color-in-progress {
+  border-left: 2px solid rgba(55, 0, 179, 0.55);
+}
+.color-done {
+  border-left: 2px solid rgba(1, 135, 134, 0.68);
+}
+.color-review {
+  border-left: 2px solid rgba(255, 229, 3, 0.68);
+}
+h2 {
+  margin-top: 10px;
+  text-align: center;
+  color: #868484;
+}
+.reported img {
+  border-radius: 100px;
+  width: 16px;
+  margin-bottom: 8px;
+}

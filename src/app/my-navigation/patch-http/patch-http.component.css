@@ -1,0 +1,14 @@
+/*.ticketId {*/
+/*  margin-left: 10px;*/
+/*}*/
+.mat-form-field {
+  /*margin-left: 10px;*/
+  width: 300px;
+}
+.formulario-container {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.type-error-container {
+  height: 100px;
+}

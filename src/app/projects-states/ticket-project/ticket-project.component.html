@@ -1,0 +1,21 @@
+<div
+  *ngFor="let ticket of tickets"
+  class="card-container"
+  style="max-width: 19rem"
+  (click)="openDialog(ticket)"
+>
+  <div class="encabezado-container">
+    <div class="type-error">{{ ticket.typeError }}</div>
+    <div class="state">STATE: {{ ticket.state }}</div>
+  </div>
+  <div class="card-body text-dark">
+    {{ ticket.descriptionError }}
+  </div>
+
+  <div class="footer-container">
+    <div class="date">
+      {{ ticket.date }}
+    </div>
+    <div class="reported">{{ ticket.reportedBy }}</div>
+  </div>
+</div>

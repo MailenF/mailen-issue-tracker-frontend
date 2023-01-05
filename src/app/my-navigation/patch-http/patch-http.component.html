@@ -1,0 +1,38 @@
+<body>
+  <div class="formulario-container">
+    <form [formGroup]="form" (ngSubmit)="updateTicket()">
+      <div class="mat-form-field">
+        <tr>
+          <mat-form-field appearance="fill">
+            <mat-label>Description Error</mat-label>
+            <textarea
+              class="type-error-container"
+              matInput
+              formControlName="descriptionError"
+            ></textarea>
+          </mat-form-field>
+        </tr>
+        <mat-form-field appearance="fill">
+          <mat-label>State</mat-label>
+          <mat-select formControlName="state">
+            <mat-option value="to-do">To Do</mat-option>
+            <mat-option value="in-progress">In Progress</mat-option>
+            <mat-option value="done">Done</mat-option>
+            <mat-option value="review">Review</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="button">
+        <button
+          class="button"
+          mat-raised-button
+          type="submit"
+          [disabled]="form.invalid"
+        >
+          Update Ticket
+        </button>
+      </div>
+    </form>
+  </div>
+</body>

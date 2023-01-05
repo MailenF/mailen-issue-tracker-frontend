@@ -1,0 +1,30 @@
+<body>
+  <div class="container">
+    <div class="foto">
+      <img src="{{ photo }}" />
+    </div>
+
+    <div class=".container-info">
+      <mat-icon (click)="patchUser()" class="icon-create">create</mat-icon>
+      <div class="name">{{ user.name }} {{ user.surname }}</div>
+      <div class="puesto">Director de grupo</div>
+      <br />
+      <div class="email"><mat-icon>mail</mat-icon> {{ user.email }}</div>
+      <div class="phone"><mat-icon> phone</mat-icon> {{ user.phone }}</div>
+      <div class="ubicacion">
+        <mat-icon> place</mat-icon>{{ user.location }}
+      </div>
+    </div>
+
+    <mat-tab-group animationDuration="0ms" mat-align-tabs="center">
+      <mat-tab label="Asignados">Asignados</mat-tab>
+      <mat-tab label="Reportados">Reportados</mat-tab>
+      <mat-tab label="Proyectos">Proyectos</mat-tab>
+    </mat-tab-group>
+
+    <div class="buttons">
+      <app-delete-user></app-delete-user>
+      <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+  </div>
+</body>

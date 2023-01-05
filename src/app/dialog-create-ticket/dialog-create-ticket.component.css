@@ -1,0 +1,7 @@
+.container-dialog {
+  width: 400px;
+}
+.container-post {
+  display: flex;
+  justify-content: center;
+}

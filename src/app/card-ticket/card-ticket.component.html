@@ -1,0 +1,34 @@
+<div
+  cdkDropList
+  [cdkDropListData]="tickets"
+  (cdkDropListDropped)="drop($event)"
+>
+  <h2>{{ title }}</h2>
+  <div
+    *ngFor="let ticket of tickets"
+    class="card-container"
+    [ngClass]="'color-' + this.state"
+    style="max-width: 19rem"
+    (click)="openDialog(ticket)"
+    cdkDrag
+  >
+    <div class="encabezado-container">
+      <div class="type-error">{{ ticket.typeError }}</div>
+      <div class="project">{{ ticket.project.project }}</div>
+    </div>
+
+    <div class="card-body text-dark">
+      {{ ticket.descriptionError }}
+    </div>
+
+    <div class="footer-container">
+      <div class="date">
+        {{ ticket.date }}
+      </div>
+      <div class="reported">
+        <img src="{{ ticket.userAssigned.photo }}" />
+        {{ ticket.userAssigned.name }} {{ ticket.userAssigned.surname }}
+      </div>
+    </div>
+  </div>
+</div>

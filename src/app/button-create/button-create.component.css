@@ -1,0 +1,31 @@
+#example-button-container {
+  display: none;
+}
+.container {
+  position: fixed;
+  bottom: 60px;
+  right: -950px;
+}
+.contenido a,
+.icon-create {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 14px;
+  font-size: 20px;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.contenido a:hover {
+  cursor: pointer;
+  color: #281dd5;
+}
+.contenido a {
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+}
+#example-button-container:checked ~ .contenido a {
+  margin-bottom: 16px;
+  opacity: 1;
+  visibility: visible;
+}

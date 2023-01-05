@@ -1,0 +1,26 @@
+<body>
+  <form [formGroup]="form" (ngSubmit)="getProject()">
+    <mat-form-field appearance="fill">
+      <mat-label>Project</mat-label>
+      <mat-select formControlName="project">
+        <mat-option *ngFor="let project of projects" [value]="project.id">
+          {{ project.project }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="button">
+      <button
+        class="button"
+        mat-raised-button
+        type="submit"
+        [disabled]="form.invalid"
+      >
+        Get Proyect
+      </button>
+    </div>
+  </form>
+  <app-ticket-project
+    [projecto]="ticket"
+    *ngIf="vistaTicket"
+  ></app-ticket-project>
+</body>

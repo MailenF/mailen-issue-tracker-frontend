@@ -1,0 +1,12 @@
+<body>
+  <div class="project">
+    <app-projects-states (vistaProjecto)="vista = $event"></app-projects-states>
+  </div>
+
+  <div class="container" *ngIf="vista">
+    <div class="titulo">Projects view</div>
+  </div>
+  <div class="container" *ngIf="vista">
+    <div class="img"><img src="assets/lupa.jpg" width="200px" /></div>
+  </div>
+</body>
